@@ -1,0 +1,44 @@
+- Comandos Básicos no terminal
+
+dir - lista as pastas onde está situado
+cd / - sobe pasta
+cd nomepasta - abre pasta
+cd .. - volta pasta acima
+cls - limpar tela
+tecla TAB - completa nome
+mkdir nomepasta - cria pasta
+echo escreverqualquercoisa - devolve escreverqualquercoisa
+echo qualquercoisa > qualquercoisa.txt - cria arquivo de texto
+del nomepasta - limpa todos os arquivos da pasta
+rmdir nomepasta /S /Q - remove pasta
+
+sha1 - tem 40 caracteres
+
+- Gerando sha1 do arquivo
+
+abrir git bash
+openssl sha1 nomearquivo.txt
+
+- Comandos para gerar chave SSH
+
+ssh-keygen -t ed25519 -C exemplo@email.com
+Crtl + L - limpar tela
+ls - listar arquivos
+cat + arquivo publico 
+eval $(ssh-agent -s)
+ls
+ssh-add arquivo privado
+
+- Clonar repositorio para servidor local
+
+pegar link ssh no github
+abrir git bash na pasta de destino
+git clone + link ssh
+
+- Adicionar as mudanças feitas no servidor local para o GitHub
+
+git add .
+gis status
+git commit -m "comentário"
+git status
+git push origin main
